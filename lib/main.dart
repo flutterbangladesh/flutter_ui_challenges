@@ -1,35 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutteruichallenges/src/pages/homepage.dart';
 
-
-/**
- * Author: Flutter Bangladesh
- * profile: https://github.com/orgs/flutterbangladesh/people
- */
 void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget{
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: FlatButton(
-            padding: const EdgeInsets.all(8.0),
-            textColor: Colors.white,
-            color: Colors.blue,
-            child:Text("Hello "),
-            onPressed:(){
-              print('HI');
-            }, ),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
     );
   }
-
-
 }
-
-
